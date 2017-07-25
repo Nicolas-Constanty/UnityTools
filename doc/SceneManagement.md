@@ -4,6 +4,7 @@ SceneManagement pipeline provide a powerful interface to create a robust multi-s
 
 ### SceneCollection
 
+#### Overview
 ![SceneCollection panel](https://github.com/Nicolas-Constanty/UnityTools/blob/master/images/SceneCollectionPanel.png)
 
 #### Create
@@ -23,3 +24,13 @@ Once your collection is created, if you select it you should obtain something li
 
 
 #### Load additive in editor
+
+Once your collection is created, if you select it you should obtain something like this :
+
+![Capture load additive collection](https://github.com/Nicolas-Constanty/UnityTools/blob/master/images/SceneCollection-LoadAdditiveCollection.png)
+
+### Transition
+
+You can chose a Transition scene for each level, you can customize you scene buy using one of these tree mode :
+
+![Capture mode](https://github.com/Nicolas-Constanty/UnityTools/blob/master/images/SceneCollection-Mode.png)
