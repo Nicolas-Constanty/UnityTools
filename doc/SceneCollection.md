@@ -46,7 +46,7 @@ You can chose a Transition scene for each level, you can customize you scene by 
 
 #### In/Out
 
-You can access to the transition like in this example of FadeIn/Out :
+* You can easily access to the transition value like in this :
 
 ```csharp
     //Call before loading your next level
@@ -55,6 +55,8 @@ You can access to the transition like in this example of FadeIn/Out :
     //Call after loading your next level
     SceneManager.Instance.TransitionOutEvent.AddListener('your function with float parameter');
 ```
+
+* Usage example (FadeIn/Out) :
 
 ```csharp
 using System.Collections;
@@ -92,12 +94,14 @@ public class Fade : MonoBehaviour
 
 #### Loading Percentage
 
-The sceneManager automatically calculates the loading percentage of your level you can simply access with :
+* The SceneManager automatically calculates the loading percentage of your level you can simply access with :
 
 ```csharp
     //Call when your level is loading (each frame)
     SceneManager.Instance.LoadingEvent.AddListener('your function with float parameter');
 ```
+
+* Usage example (update text) :
 
 ```csharp
 using UnityEngine;
