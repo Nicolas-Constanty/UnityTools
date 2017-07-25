@@ -32,7 +32,7 @@ Once your collection is created, if you select it you should obtain something li
 
 ### Transition
 
-You can chose a Transition scene for each level, you can customize you scene buy using one of these tree mode :
+You can chose a Transition scene for each level, you can customize you scene by using one of these tree mode :
 
 #### Mode
 ![Capture mode](https://github.com/Nicolas-Constanty/UnityTools/blob/master/images/SceneCollection-Mode.png)
