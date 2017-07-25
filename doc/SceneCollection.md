@@ -42,7 +42,19 @@ You can chose a Transition scene for each level, you can customize you scene by 
 * Constant (Drive your transition scene with constant value)
 * None (No transition value)
 
-You can access to the transition like in this example of FadeIn/Out
+### Access to the transitions info
+
+#### In/Out
+
+You can access to the transition like in this example of FadeIn/Out :
+
+```csharp
+    //Call before loading your next level
+    SceneManager.Instance.TransitionInEvent.AddListener('your function with float parameter');
+    
+    //Call after loading your next level
+    SceneManager.Instance.TransitionOutEvent.AddListener('your function with float parameter');
+```
 
 ```csharp
 using System.Collections;
@@ -76,4 +88,47 @@ public class Fade : MonoBehaviour
         m_Img.color = c;
     }
 }
+```
+
+#### Loading Percentage
+
+The sceneManager automatically calculates the loading percentage of your level you can simply access with :
+
+```csharp
+    //Call when your level is loading (each frame)
+    SceneManager.Instance.LoadingEvent.AddListener('your function with float parameter');
+```
+
+```csharp
+using UnityEngine;
+using UnityEngine.UI;
+using UnityTools;
+
+[RequireComponent(typeof(Text))]
+public class UpdateLoading : MonoBehaviour
+{
+
+    public string Format = "Loading {0}%";
+    private Text m_T;
+
+    private void Start()
+    {
+        m_T = GetComponent<Text>();
+        
+        //Register LoadingEvent
+        SceneManager.Instance.LoadingEvent.AddListener(UpdateText);
+    }
+
+    private void UpdateText(float value)
+    {
+        //Assign value inject by the SceneManager event
+        m_T.text = string.Format(Format, value * 100);
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.Instance.LoadingEvent.RemoveListener(UpdateText);
+    }
+}
+
 ```
