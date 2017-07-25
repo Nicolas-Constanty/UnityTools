@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 091e009b19963c64c94a0249b79a7671, type: 3}
+  m_Name: SceneManagerProfile
+  m_EditorClassIdentifier: 
+  SceneStatesModel:
+    m_Enabled: 0
+    m_Settings:
+      Method: 1
+      SceneStatesSettings:
+        SceneStates:
+        - State: 0
+          Scene: {fileID: 0}
+          Loading: 0
+          Enabled: 1
+        - State: 1
+          Scene: {fileID: 0}
+          Loading: 0
+          Enabled: 1
+        - State: 2
+          Scene: {fileID: 0}
+          Loading: 0
+          Enabled: 1
+        - State: 3
+          Scene: {fileID: 0}
+          Loading: 0
+          Enabled: 1
+        - State: 4
+          Scene: {fileID: 0}
+          Loading: 0
+          Enabled: 1
+  LevelSceneModel:
+    m_Enabled: 1
+    m_Settings:
+      SceneCollectionSettings:
+        SceneCollection:
+        - Collection: {fileID: 11400000, guid: 2cf38a322c7f7094f857ce260e39751c, type: 2}
+          Build: 1
+          Enable: 1
+          PriorityLevel: 2
+        - Collection: {fileID: 11400000, guid: d028dbda6da39f04a83ff700fe4f8387, type: 2}
+          Build: 1
+          Enable: 1
+          PriorityLevel: 2
