@@ -18,7 +18,9 @@ Rename it and move it to an appropriate folder
 
 Once your collection is created, if you select it you should obtain something like this :
 
-![Capture load collection](https://github.com/Nicolas-Constanty/UnityTools/blob/master/images/SceneCollection-LoadCollection.png)
+<p align="center">
+  <img src="https://github.com/Nicolas-Constanty/UnityTools/blob/master/images/SceneCollection-LoadCollection.png?raw=true" alt="Capture load collection"/>
+</p>
 
 
 ### Load additive in editor
