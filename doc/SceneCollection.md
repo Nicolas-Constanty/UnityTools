@@ -42,9 +42,9 @@ You can chose a Transition scene for each level, you can customize you scene by 
 * Constant (Drive your transition scene with constant value)
 * None (No transition value)
 
-### Access to the transitions info
+### Access to the transition infos
 
-#### In/Out
+#### Transition value
 
 * You can easily access to the transition value like in this :
 
