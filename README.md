@@ -1,7 +1,7 @@
 # UnityTools
 
 UnityTools provide useful script and demos architecture for Unity3D
-Work in progress - [SceneManagement](https://github.com/Nicolas-Constanty/doc/SceneManagement.md)
+Work in progress - [SceneManagement](https://github.com/Nicolas-Constanty/UnityTools/doc/SceneManagement.md)
 
 ## Getting Started
 
