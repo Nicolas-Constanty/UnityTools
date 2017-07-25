@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: 
   Expand: 0
-  CollectionName: Collection Name
+  CollectionName: Level1
   SceneReferences:
   - {fileID: 102900000, guid: da7365f0902209c4bbc7c6244173bfda, type: 3}
   - {fileID: 102900000, guid: ea2a268f7729dff4a9dde67b2ddec60a, type: 3}

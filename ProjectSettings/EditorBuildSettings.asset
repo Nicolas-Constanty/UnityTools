@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Lighting.unity
+    guid: 2ede79597bf5c9245929db71e9490f71
+  - enabled: 1
+    path: Assets/Scenes/InteriorEnvironment.unity
+    guid: e8b4348be707beb4fb5f7ef84a61da86
+  - enabled: 1
+    path: Assets/VFX.unity
+    guid: e7c9ab9c5840a3d479f34559c9cc123d
