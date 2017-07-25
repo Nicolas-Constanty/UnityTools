@@ -4,6 +4,8 @@ SceneManagement pipeline provide a powerful interface to create a robust multi-s
 
 ### SceneCollection
 
+![SceneCollection panel](https://github.com/Nicolas-Constanty/UnityTools/blob/master/images/SceneCollectionPanel.png)
+
 #### Create
 
 Open SceneManagement window
