@@ -41,18 +41,6 @@ You can chose a Transition scene for each level, you can customize you scene by 
 * Curve (Drive your transition value with curve)
 * Constant (Drive your transition value with constant value)
 * None (No transition value - 0)
-
-### Transition 
- 
-You can chose a Transition scene for each level, you can customize you scene by using one of these tree mode : 
- 
-#### Mode 
-![Capture mode](https://github.com/Nicolas-Constanty/UnityTools/blob/master/images/SceneCollection-Mode.png) 
- 
-* Auto (Default parameter) 
-* Curve (Drive your transition value with curve) 
-* Constant (Drive your transition value with constant value) 
-* None (No transition value - 0) 
  
 ### Access to the transition infos 
  
