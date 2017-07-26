@@ -1,69 +1,52 @@
-# Jekyll Cayman theme
+# UnityTools
 
-This is a [Jekyll][1] theme for [@jasonlong][2]'s [Cayman theme][4] on [GitHub Pages][3].
+UnityTools provide useful script and demos architecture for Unity3D
+Work in progress - [SceneManagement](https://github.com/Nicolas-Constanty/UnityTools/blob/master/docs/SceneManagement.md)
 
-Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com). This theme is available as an option if you use the [Automatic Page Generator](https://help.github.com/articles/creating-pages-with-the-automatic-generator/) or you can copy the template and styles to use on your own.
+## Getting Started
 
-You can preview the theme at http://jasonlong.github.io/cayman-theme or with real content at http://jasonlong.github.io/geo_pattern.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-![](http://cl.ly/image/1T3r3d18311V/content)
+### Prerequisites
 
-# How to use it?
+Unity3D >= 5.6
 
-Download the theme @ http://github.com/pietromenna/jekyll-cayman-theme/archive/master.zip
+### Installing
 
-Unzip it and use it as a regular jekyll folder.
+A step by step series of examples that tell you have to get a development env running
 
-```
-$ unzip jekyll-cayman-theme-master.zip
-```
-
-Get inside the newly extracted folder
-```
-$ cd jekyll-cayman-theme-master
-```
-
-Get the required gems
-```
-$ bundle install
-```
-
-Use it!
+Download from github
 
 ```
-$ jekyll serve
+Give the example
 ```
 
-For more details read about [Jekyll][1] on its web page.
+And repeat
 
-# Setup
+```
+until finished
+```
 
-Some important configuration can be done in the file `_config.yml`. Please, check the Setup section in that file.
+End with an example of getting some data out of the system or using it for a little demo
 
+## Contributing
 
-## baseurl
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-`baseurl` parameter is required in the case the site doesn't sit on the root of the domain. For example: http://pietromenna.github.io/jekyll-cayman-theme
+## Versioning
 
-In the case above the baseurl should be set to "/jekyll-cayman-theme".
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
-In the case the site sits in the root, you can leave `baseurl` as empty "".
+## Authors
 
-# Contributing
+* **Nicolas Constanty** - *Initial work* - [Nicolas Constanty](https://github.com/Nicolas-Constanty)
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/pietromenn/jekyll-cayman-theme.
+## License
 
-# Development
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Nicolas-Constanty/UnityTools/blob/master/LICENSE) file for details
 
-To set up your environment to develop this theme, run `bundle install`.
+## Acknowledgments
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-# License
-
-This work is licensed under a [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) license.
-
-[1]: http://jekyllrb.com/
-[2]: https://github.com/jasonlong
-[3]: http://pages.github.com/
-[4]: https://github.com/jasonlong/cayman-theme
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc
