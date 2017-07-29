@@ -29,7 +29,7 @@ namespace UnityTools
                     init = true;
                 }
                 Type type = typeof(T);
-                MethodInfo method = type.GetMethod("On" + state + "Game", BindingFlags.NonPublic);
+                MethodInfo method = type.GetMethod("On" + state + "Game", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
                 if (method != null)
                 {
                     GameStatesUpdateActions[state] = (GameAction)Delegate.CreateDelegate(typeof(GameAction), this, method.Name);
