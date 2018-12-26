@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using UnityTools;
+using UnityTools.SceneManagement;
 
 [RequireComponent(typeof(Text))]
 public class UpdateLoading : MonoBehaviour

@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf15d1adbf6f38f49854796d577a4d77, type: 3}
-  m_Name: SceneCollection
+  m_Name: Level2
   m_EditorClassIdentifier: 
   Expand: 0
-  CollectionName: Collection Name
-  SceneReferences: []
+  CollectionName: Level2
+  SceneReferences:
+  - Assets/UnityTools/Demos/SceneManager/Levels/Level2/Lights.unity
+  - Assets/UnityTools/Demos/SceneManager/Levels/Level2/Environnement.unity
+  - Assets/UnityTools/Demos/SceneManager/Levels/Level2/Logic.unity
   TransitionScene:
     Mode: 0
     In:
@@ -68,6 +71,6 @@ MonoBehaviour:
     scenePath: 
     Scene: {fileID: 0}
   SceneAssets:
-  - {fileID: 102900000, guid: 152d722cc0592be4496ddf8bab603564, type: 3}
-  - {fileID: 102900000, guid: da7365f0902209c4bbc7c6244173bfda, type: 3}
-  - {fileID: 102900000, guid: 3f2858261de639243967b91739d561cd, type: 3}
+  - {fileID: 102900000, guid: ea2a268f7729dff4a9dde67b2ddec60a, type: 3}
+  - {fileID: 102900000, guid: fefd6efbd184a544bab4ee3e828f2804, type: 3}
+  - {fileID: 102900000, guid: 9d0dbe485bb00c34a9dac6978054bf95, type: 3}

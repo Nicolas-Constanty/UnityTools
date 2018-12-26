@@ -97,5 +97,5 @@ namespace UnityTools.Collections
                 return base.GetPropertyHeight(property, label);
         }
     }
-#endif
 }
+#endif

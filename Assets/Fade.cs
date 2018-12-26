@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityTools;
+using UnityTools.SceneManagement;
 
 [RequireComponent(typeof(Image))]
 public class Fade : MonoBehaviour

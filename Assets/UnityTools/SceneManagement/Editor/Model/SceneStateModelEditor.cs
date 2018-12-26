@@ -120,7 +120,7 @@ namespace UnityTools.SceneManagement.Model
                 var element = l.serializedProperty.GetArrayElementAtIndex(index);
                 SceneStatesModel.SceneStatesSettings defaultValue = SceneStatesModel.SceneStatesSettings.DefaultSettings;
                 element.FindPropertyRelative("State").enumValueIndex = (int)defaultValue.SceneStates[0].State;
-                element.FindPropertyRelative("Scene").objectReferenceValue = defaultValue.SceneStates[0].Scene;
+                element.FindPropertyRelative("Scene").objectReferenceValue = (Object) defaultValue.SceneStates[0].Scene.Handle();
                 element.FindPropertyRelative("Loading").enumValueIndex = (int)defaultValue.SceneStates[0].Loading;
                 element.FindPropertyRelative("Enabled").boolValue = defaultValue.SceneStates[0].Enabled;
             };

@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityTools.Inspector;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 // ReSharper disable once CheckNamespace
 namespace UnityTools.SceneManagement.Model
@@ -16,6 +20,51 @@ namespace UnityTools.SceneManagement.Model
             GameManager
         }
 
+        interface IScene
+        {
+            string Path();
+            object Handle();
+        }
+
+        [System.Serializable]
+        public class SceneHandler : IScene
+        {
+#if UNITY_EDITOR
+            private SceneAsset _handle;
+            public SceneHandler(SceneAsset s)
+            {
+                _handle = s;
+            }
+
+            public string Path()
+            {
+                return AssetDatabase.GetAssetPath(_handle);
+            }
+
+            public object Handle()
+            {
+                return _handle;
+            }
+#else
+            private Scene _handle;
+
+            public SceneHandler(Scene s)
+            {
+                _handle = s;
+            }
+
+            public string Path()
+            {
+                return _handle.path;
+            }
+
+            public object Handle()
+            {
+                return _handle;
+            }
+#endif
+        }
+
         [Serializable]
         public struct SceneStatesSettings
         {
@@ -23,7 +72,7 @@ namespace UnityTools.SceneManagement.Model
             public struct SceneState
             {
                 public GameManager.State State;
-                public SceneAsset Scene;
+                public SceneHandler Scene;
                 public Loading Loading;
                 public bool Enabled;
             }

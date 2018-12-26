@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 // ReSharper disable once CheckNamespace
 namespace UnityTools.Collections
 {
+    [Serializable]
     public class ObservableList<T> : IList<T>, INotifyCollectionChanged
     {
         private readonly List<T> m_List = new List<T>();

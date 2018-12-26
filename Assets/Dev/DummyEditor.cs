@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+
+using UnityEngine;
 using UnityEditor;
 using System.Collections;
 
@@ -11,3 +13,5 @@ public class DummyEditor : EditorWindow
         AssetDatabase.CreateAsset(skin, "Assets/EditorSkin.guiskin");
     }
 }
+
+#endif

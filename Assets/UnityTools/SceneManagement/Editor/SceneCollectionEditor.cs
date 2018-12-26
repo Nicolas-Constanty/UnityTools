@@ -9,7 +9,7 @@ namespace UnityTools.SceneManagement
 {
     [CustomEditor(typeof(SceneCollection))]
     // ReSharper disable once CheckNamespace
-    public class SceneCollectionEditor : Editor
+    public class SceneCollectionEditor : UnityEditor.Editor
     {
 
         private SceneCollection m_T;
@@ -32,7 +32,7 @@ namespace UnityTools.SceneManagement
         {
             m_T = (SceneCollection) target;
             m_GetTarget = new SerializedObject(m_T);
-            m_SceneReferenceProperty = m_GetTarget.FindProperty("SceneReferences");
+            m_SceneReferenceProperty = m_GetTarget.FindProperty("SceneAssets");
             m_Name = m_GetTarget.FindProperty("CollectionName");
             m_TransitionScene = m_GetTarget.FindProperty("TransitionScene");
 
@@ -70,13 +70,12 @@ namespace UnityTools.SceneManagement
                 GUILayout.Space(2);
                 EditorGUILayout.PropertyField(m_TransitionScene.FindPropertyRelative("Out"));
                 GUILayout.Space(2);
-                EditorGUILayout.PropertyField(m_TransitionScene.FindPropertyRelative("Scene"), new GUIContent("Scene"), true);
-                
+                EditorGUILayout.PropertyField(m_TransitionScene.FindPropertyRelative("Scene"));
             }
             else if (mode.enumValueIndex == 0)
             {
                 GUILayout.Space(2);
-                EditorGUILayout.PropertyField(m_TransitionScene.FindPropertyRelative("Scene"), new GUIContent("Scene"), true);
+                EditorGUILayout.PropertyField(m_TransitionScene.FindPropertyRelative("Scene"));
             }
             EditorGUI.indentLevel--;
             //EditorGUILayout.PropertyField(m_TransitionScene, new GUIContent("Transition Scene"), true);
@@ -85,6 +84,10 @@ namespace UnityTools.SceneManagement
                 m_T.Load();
             if (GUILayout.Button("Load Additive Collection"))
                 m_T.LoadAdditive();
+            if (GUILayout.Button("Create from OpenScene"))
+                m_T.CopyFromOpenScenes();
+            if (GUILayout.Button("Append OpenScene"))
+                m_T.AppendOpenScenes();
             GUILayout.Space(5);
             EditorGUILayout.EndVertical();
             m_GetTarget.ApplyModifiedProperties();

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityTools.Inspector;
 
-// ReSharper disable once CheckNamespace
 namespace UnityTools.SceneManagement.Model
 {
     [Serializable]

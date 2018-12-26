@@ -2,6 +2,7 @@
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityTools.Common;
+using UnityTools.SceneManagement.Model;
 
 // ReSharper disable once CheckNamespace
 namespace UnityTools.SceneManagement
@@ -14,7 +15,7 @@ namespace UnityTools.SceneManagement
         public static void ShowWindow()
         {
 
-           var w = GetWindow<SceneManagementWindow>("Manager");
+            var w = GetWindow<SceneManagementWindow>("Manager");
             GUIContent c = new GUIContent()
             {
                 image = Resources.Load("UnityTools", typeof(Texture2D)) as Texture,
@@ -24,9 +25,7 @@ namespace UnityTools.SceneManagement
         }
 
         // Update is called once per frame
-        // ReSharper disable once UnusedMember.Local
-        // ReSharper disable once InconsistentNaming
-        private void OnGUI()
+        public void OnGUI()
         {
             //Texture2D t = EditorGUIUtility.Load("Icons/UnityEditor.DebugInspectorWindow.png") as Texture2D;
             GUILayout.Label("UnityTools @SceneManagement");
@@ -41,7 +40,10 @@ namespace UnityTools.SceneManagement
                 for (int i = 0; i < EditorSceneManager.loadedSceneCount; i++)
                 {
                     string path = EditorSceneManager.GetSceneAt(i).path;
-                    sc.SceneReferences.Add(AssetDatabase.LoadAssetAtPath<SceneAsset>(path));
+                    var sa = AssetDatabase.LoadAssetAtPath<SceneAsset>(path);
+                    sc.SceneAssets.Add(sa);
+                    sc.SceneReferences.Add(AssetDatabase.GetAssetPath(sa));
+                    sc.AddToBuild(sa);
                 }
             }
         }

@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityTools;
+using UnityTools.SceneManagement;
 
 public class GameManager : AGameManager<GameManager, GameManager.State>
 {

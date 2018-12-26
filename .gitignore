@@ -53,3 +53,9 @@ Assets/Lighting\.unity
 Assets/Features\.meta
 
 docs/_site/
+
+Logs/
+
+Packages/
+
+.vs/

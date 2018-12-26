@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -18,23 +19,18 @@ MonoBehaviour:
       SceneStatesSettings:
         SceneStates:
         - State: 0
-          Scene: {fileID: 0}
           Loading: 0
           Enabled: 1
         - State: 1
-          Scene: {fileID: 0}
           Loading: 0
           Enabled: 1
         - State: 2
-          Scene: {fileID: 0}
           Loading: 0
           Enabled: 1
         - State: 3
-          Scene: {fileID: 0}
           Loading: 0
           Enabled: 1
         - State: 4
-          Scene: {fileID: 0}
           Loading: 0
           Enabled: 1
   LevelSceneModel:
